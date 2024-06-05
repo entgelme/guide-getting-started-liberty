@@ -1,4 +1,4 @@
-// Copyright (c) 2018, 2023 IBM Corporation and others.
+// Copyright (c) 2018, 2024 IBM Corporation and others.
 // Licensed under Creative Commons Attribution-NoDerivatives
 // 4.0 International (CC BY-ND 4.0)
 //   https://creativecommons.org/licenses/by-nd/4.0/
@@ -14,7 +14,7 @@
 :page-essential: true
 :page-essential-order: 1
 :page-description: Learn how to develop a Java application on Open Liberty with Maven and Docker.
-:page-tags: ['Docker', 'Maven']
+:page-tags: ['docker', 'maven']
 :page-related-guides: ['maven-intro', 'rest-intro', 'docker']
 :page-permalink: /guides/{projectid}
 :common-includes: https://raw.githubusercontent.com/OpenLiberty/guides-common/prod
@@ -45,10 +45,11 @@ Finally, you will package the application along with Liberty's configuration int
 // =================================================================================================
 // Getting Started
 // =================================================================================================
+
 [role='command']
 include::{common-includes}/gitclone.adoc[]
 
-// no "try what you'll build" necessary in this guide
+You have cloned a Maven project. To learn how to create a Liberty Maven project from scratch and edit your application using the Liberty Tools, see https://openliberty.io/blog/2024/05/31/liberty-project-starter-guide-IntelliJ.html[Developing a cloud-native Java application with Liberty Tools in IntelliJ IDEA^].
 
 // Cloud hosted guide instruction
 ifdef::cloud-hosted[]
