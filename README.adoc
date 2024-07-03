@@ -332,9 +332,11 @@ include::{common-includes}/devmode-quit-ctrlc.adoc[]
 
 == Running the application in a Docker container
 
+ifndef::cloud-hosted[]
 To run the application in a container, Docker needs to be installed. For installation instructions, see the https://docs.docker.com/install/[Official Docker Docs^].
 
 Make sure to start your Docker daemon before you proceed.
+endif::[]
 
 To containerize the application, you need a `Dockerfile`. This file contains a collection of instructions that define how a Docker image is built, what files are packaged into it, what commands run when the image runs as a container, and other information. You can find a complete `Dockerfile` in the `start` directory. This `Dockerfile` copies the `.war` file into a Docker image that contains the Java runtime and a preconfigured Open Liberty runtime.
 
