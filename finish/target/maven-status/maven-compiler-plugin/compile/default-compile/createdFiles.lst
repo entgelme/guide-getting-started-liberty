@@ -1,0 +1,4 @@
+io/openliberty/sample/system/SystemLivenessCheck.class
+io/openliberty/sample/system/SystemResource.class
+io/openliberty/sample/system/SystemApplication.class
+io/openliberty/sample/system/SystemReadinessCheck.class
