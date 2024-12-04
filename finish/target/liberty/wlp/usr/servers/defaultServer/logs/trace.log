@@ -1103,3 +1103,57 @@ trace.specification = *=info:com.ibm.ws.microprofile.health.*=all
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
+[04.12.24, 11:32:09:360 MEZ] 00000025 id=00000000 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Der Server defaultServer wird gerade gestoppt, weil die JVM beendet wird.
+[04.12.24, 11:32:09:376 MEZ] 000000ee id=00000000 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Es wird bis zu 30 Sekunden gewartet, bis der Server in den Quiescemodus versetzt wird.
+[04.12.24, 11:32:09:393 MEZ] 000000e3 id=00000000 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint-ssl ist auf Host *  (IPv6) an Port 9443 nicht mehr für Anforderungen empfangsbereit.
+[04.12.24, 11:32:09:401 MEZ] 000000e3 id=00000000 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint ist auf Host *  (IPv6) an Port 9080 nicht mehr für Anforderungen empfangsbereit.
+[04.12.24, 11:32:09:402 MEZ] 000000e3 id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/dev/
+[04.12.24, 11:32:09:402 MEZ] 000000e3 id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/metrics/
+[04.12.24, 11:32:09:402 MEZ] 000000e3 id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/health/
+[04.12.24, 11:32:09:402 MEZ] 000000e3 id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/ibm/api/
+[04.12.24, 11:32:09:828 MEZ] 00000026 id=00000000 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Herunterfahren des Servers angefordert am Mittwoch, 4. Dezember 2024 um 11:32. Der Server defaultServer wird beendet.
+[04.12.24, 11:32:10:412 MEZ] 000000ee id=00000000 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Serverstilllegung abgeschlossen.
+[04.12.24, 11:32:10:476 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStopping Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@6942c1c7[guide-getting-started]
+[04.12.24, 11:32:10:477 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStopping Exit 
+[04.12.24, 11:32:10:496 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStopped Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@6942c1c7[guide-getting-started]
+[04.12.24, 11:32:10:497 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > processApplication Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@1a944d8d ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@6942c1c7[guide-getting-started]
+                                                                                                               guide-getting-started
+                                                                                                               true
+[04.12.24, 11:32:10:497 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getWebModuleMetaData Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@1a944d8d ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+[04.12.24, 11:32:10:498 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getWebModuleMetaData Exit  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@4c91d561[guide-getting-started#guide-getting-started.war]
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getAppModuleNameFromMetaData Entry  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@4c91d561[guide-getting-started#guide-getting-started.war]
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 getAppModuleNameFromMetaData() : appModuleName = guide-getting-started#guide-getting-started.war
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getAppModuleNameFromMetaData Exit  
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > moduleStopped Entry  
+                                                                                                               guide-getting-started
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 moduleStopped(): app module removed = {} for app: guide-getting-started and for module: guide-getting-started.war
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < moduleStopped Exit 
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < processApplication Exit 
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getApplicationMBean Entry  
+                                                                                                               guide-getting-started
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getApplicationMBean Exit  
+                                                                                                               STOPPING
+[04.12.24, 11:32:10:499 MEZ] 0000005c id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStopped(): stopped app removed from appStateMap = {} for app: guide-getting-started
+[04.12.24, 11:32:10:500 MEZ] 0000005c id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStopped Exit 
+[04.12.24, 11:32:10:502 MEZ] 0000005c id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Die Anwendung guide-getting-started wurde erfolgreich gestoppt.
+[04.12.24, 11:32:10:784 MEZ] 000000ee id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > deactivate Entry  
+                                                                                                               org.apache.felix.scr.impl.manager.ComponentContextImpl@7f340172
+                                                                                                               6
+[04.12.24, 11:32:10:785 MEZ] 000000ee id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 AppTrackerImpl is deactivated
+[04.12.24, 11:32:10:786 MEZ] 000000ee id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < deactivate Exit 
+[04.12.24, 11:32:10:786 MEZ] 000000ee id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > unsetConfigAdmin Entry  
+                                                                                                               com.ibm.ws.config.admin.internal.ConfigurationAdminImpl@3d237871
+[04.12.24, 11:32:10:786 MEZ] 000000ee id=516d0b87 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < unsetConfigAdmin Exit 
+[04.12.24, 11:32:10:801 MEZ] 000000ee id=00000000 .microprofile.metrics.internal.monitor.MonitorMetricsHandler I CWPMI2004I: Die Registrierung aller Überwachungsmetriken wurde in mpMetrics aufgehoben.
+[04.12.24, 11:32:10:911 MEZ] 000000ee id=00000000 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: Das Verbundauthentifizierungs-Plug-in mit dem Klassennamen NullCollectiveAuthenticationPlugin wurde inaktiviert. 
+[04.12.24, 11:32:10:913 MEZ] 000000ee id=00000000 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: Der Sicherheitsservice wurde gestoppt.
+[04.12.24, 11:32:11:189 MEZ] 00000001 id=00000000 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Der Server defaultServer wurde nach 1 Stunden, 6 Minuten, 0,365 Sekunden gestoppt.
