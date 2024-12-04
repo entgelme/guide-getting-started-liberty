@@ -160,3 +160,18 @@ Java Library path = /Users/andreas/Library/Java/Extensions:/Library/Java/Extensi
 [04.12.24, 11:57:22:230 MEZ] 0000005f com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [guide-getting-started] [/dev] [io.openliberty.sample.system.SystemApplication]: Initialisierung erfolgreich.
 [04.12.24, 11:57:25:363 MEZ] 0000003a SystemOut                                                    O JSON Object: {"Url":"https://hello-hello.apps.aehub1.cp.fyre.ibm.com/"}
 [04.12.24, 11:57:25:740 MEZ] 0000003a SystemOut                                                    O Error javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[04.12.24, 12:01:46:898 MEZ] 00000025 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Der Server defaultServer wird gerade gestoppt, weil die JVM beendet wird.
+[04.12.24, 12:01:46:908 MEZ] 00000099 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Es wird bis zu 30 Sekunden gewartet, bis der Server in den Quiescemodus versetzt wird.
+[04.12.24, 12:01:46:929 MEZ] 0000008d com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint-ssl ist auf Host *  (IPv6) an Port 9443 nicht mehr für Anforderungen empfangsbereit.
+[04.12.24, 12:01:46:932 MEZ] 0000008d com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint ist auf Host *  (IPv6) an Port 9080 nicht mehr für Anforderungen empfangsbereit.
+[04.12.24, 12:01:46:933 MEZ] 0000008d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/dev/
+[04.12.24, 12:01:46:933 MEZ] 0000008d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/health/
+[04.12.24, 12:01:46:934 MEZ] 0000008d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/metrics/
+[04.12.24, 12:01:46:934 MEZ] 0000008d com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/ibm/api/
+[04.12.24, 12:01:47:507 MEZ] 00000026 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Herunterfahren des Servers angefordert am Mittwoch, 4. Dezember 2024 um 12:01. Der Server defaultServer wird beendet.
+[04.12.24, 12:01:47:951 MEZ] 00000099 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Serverstilllegung abgeschlossen.
+[04.12.24, 12:01:48:013 MEZ] 00000036 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Die Anwendung guide-getting-started wurde erfolgreich gestoppt.
+[04.12.24, 12:01:48:211 MEZ] 00000099 .microprofile.metrics.internal.monitor.MonitorMetricsHandler I CWPMI2004I: Die Registrierung aller Überwachungsmetriken wurde in mpMetrics aufgehoben.
+[04.12.24, 12:01:48:330 MEZ] 00000099 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: Das Verbundauthentifizierungs-Plug-in mit dem Klassennamen NullCollectiveAuthenticationPlugin wurde inaktiviert. 
+[04.12.24, 12:01:48:334 MEZ] 00000099 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: Der Sicherheitsservice wurde gestoppt.
+[04.12.24, 12:01:48:689 MEZ] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Der Server defaultServer wurde nach 21 Minuten, 16,006 Sekunden gestoppt.
