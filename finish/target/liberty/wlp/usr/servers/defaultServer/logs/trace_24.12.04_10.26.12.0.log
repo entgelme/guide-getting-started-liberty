@@ -1,0 +1,263 @@
+********************************************************************************
+product = Open Liberty 24.0.0.12 (wlp-1.0.96.cl241220241119-0657)
+wlp.install.dir = /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+java.version = 21.0.2
+java.runtime = Java(TM) SE Runtime Environment (21.0.2+13-LTS-58)
+os = Mac OS X (14.6.1; x86_64) (de_DE)
+process = 24998@MBP-von-Andreas.fritz.box
+Classpath = /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/andreas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+trace.specification = *=info:com.ibm.ws.microprofile.health.*=all
+********************************************************************************
+[04.12.24, 10:23:27:050 MEZ] 00000032 id=00000000 com.ibm.ws.logging.internal.TraceSpecification               I TRAS0018I: Der Tracestatus wurde geändert. Der neue Tracestatus ist *=info:com.ibm.ws.microprofile.health.*=all.
+[04.12.24, 10:23:27:407 MEZ] 00000001 id=00000000 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Der Kernel wurde nach  1,863 Sekunden gestartet.
+[04.12.24, 10:23:27:456 MEZ] 00000036 id=00000000 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Die Featureaktualisierung wurde gestartet.
+[04.12.24, 10:23:29:262 MEZ] 00000029 id=00000000 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: Der Sicherheitsservice wird gestartet...
+[04.12.24, 10:23:29:521 MEZ] 0000002a id=00000000 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: dropins auf Anwendungen überwachen.
+[04.12.24, 10:23:30:779 MEZ] 0000002a id=00000000 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: Die Instanz von WebSphere Dynamic Cache mit dem Namen baseCache wurde ordnungsgemäß initialisiert.
+[04.12.24, 10:23:30:804 MEZ] 0000002a id=00000000 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: Der Cacheprovider default wird verwendet.
+[04.12.24, 10:23:30:807 MEZ] 0000002a id=00000000 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (Objektcache) wurde erfolgreich initialisiert.
+[04.12.24, 10:23:30:869 MEZ] 0000002c id=00000000 org.jboss.weld.bootstrap.WeldStartup                         I <clinit> WELD-000900: 5.1.1 (SP2)
+[04.12.24, 10:23:31:007 MEZ] 0000002b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > <init> Entry 
+[04.12.24, 10:23:31:010 MEZ] 0000002b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < <init> Exit  
+                                                                                                               com.ibm.ws.microprofile.health.internal.AppTrackerImpl@3fecf9ea
+[04.12.24, 10:23:31:011 MEZ] 0000002b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > setConfigAdmin Entry  
+                                                                                                               com.ibm.ws.config.admin.internal.ConfigurationAdminImpl@62bba312
+[04.12.24, 10:23:31:012 MEZ] 0000002b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 Adding app found by configAdmin: guide-getting-started
+[04.12.24, 10:23:31:012 MEZ] 0000002b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < setConfigAdmin Exit 
+[04.12.24, 10:23:31:013 MEZ] 0000002b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > activate Entry  
+                                                                                                               org.apache.felix.scr.impl.manager.ComponentContextImpl@1122f129
+                                                                                                               {service.vendor=IBM, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=com.ibm.ws.microprofile.health.internal.AppTrackerImpl, component.id=278}
+[04.12.24, 10:23:31:013 MEZ] 0000002b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 AppTrackerImpl is activated
+[04.12.24, 10:23:31:013 MEZ] 0000002b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < activate Exit 
+[04.12.24, 10:23:31:152 MEZ] 00000032 id=00000000 com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0820A: Der Standard-Keystore wurde mit der Umgebungsvariablen 'keystore_password' erstellt.
+[04.12.24, 10:23:31:163 MEZ] 00000032 id=00000000 com.ibm.ws.ssl.config.WSKeyStore                             I CWPKI0802I: Das SSL-Zertifikat wird erstellt. Dieser Vorgang kann einige Sekunden dauern.
+[04.12.24, 10:23:31:220 MEZ] 0000003b id=00000000 com.ibm.ws.security.token.ltpa.LTPAKeyInfoManager            I CWWKS4103I: Die LTPA-Schlüssel werden erstellt. Dieser Vorgang kann einige Sekunden dauern.
+[04.12.24, 10:23:31:329 MEZ] 00000029 id=00000000 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: Das Verbundauthentifizierungs-Plug-in mit dem Klassennamen NullCollectiveAuthenticationPlugin wurde aktiviert. 
+[04.12.24, 10:23:31:782 MEZ] 0000003b id=00000000 com.ibm.ws.security.token.ltpa.LTPAKeyInfoManager            A CWWKS4104A: Die LTPA-Schlüssel wurden in 0,560 Sekunden erstellt. LTPA-Schlüsseldatei: /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/resources/security/ltpa.keys
+[04.12.24, 10:23:31:801 MEZ] 0000003b id=00000000 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: Die LTPA-Konfiguration ist nach 0,586 Sekunden bereit.
+[04.12.24, 10:23:32:845 MEZ] 00000032 id=00000000 com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0803A: Das SSL-Zertifikat wurde in 1,680 Sekunden erstellt. SSL-Schlüsseldatei: /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/resources/security/key.p12
+[04.12.24, 10:23:32:869 MEZ] 00000032 id=00000000 com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/resources/security/key.p12 of type: PKCS12
+[04.12.24, 10:23:33:070 MEZ] 00000029 id=00000000 SessionMgrComponentImpl                                      I initialize SESN8501I: Der Sitzungsmanager konnte keine persistente Speicherposition finden. HttpSession-Objekte werden im lokalen Anwendungsserverspeicher gespeichert.
+[04.12.24, 10:23:33:084 MEZ] 00000029 id=00000000 .microprofile.metrics.internal.monitor.MonitorMetricsHandler I CWPMI2003I: Die Überwachungsmetriken können über das Feature mpMetrics abgerufen werden.
+[04.12.24, 10:23:33:531 MEZ] 00000037 id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Die Anwendung guide-getting-started wird gestartet.
+[04.12.24, 10:23:33:534 MEZ] 00000037 id=00000000 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Die Anwendung guide-getting-started verwendet die lose Anwendungsdefinition an der Position /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/apps/guide-getting-started.war.xml.
+[04.12.24, 10:23:33:806 MEZ] 00000038 id=00000000 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Das Webmodul wird geladen: PublicMicroProfileMetrics.
+[04.12.24, 10:23:33:811 MEZ] 00000038 id=00000000 com.ibm.ws.webcontainer.osgi.DynamicVirtualHost              I addWebApplication SRVE0250I: Das Webmodul PublicMicroProfileMetrics wurde an default_host gebunden.
+[04.12.24, 10:23:33:813 MEZ] 00000038 id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Webanwendung verfügbar: (default_host): http://mbp-von-andreas.fritz.box:9080/metrics/
+[04.12.24, 10:23:33:830 MEZ] 0000003c id=00000000 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Das Webmodul wird geladen: ibm/api.
+[04.12.24, 10:23:33:831 MEZ] 0000003c id=00000000 com.ibm.ws.webcontainer.osgi.DynamicVirtualHost              I addWebApplication SRVE0250I: Das Webmodul ibm/api wurde an default_host gebunden.
+[04.12.24, 10:23:33:831 MEZ] 0000003c id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Webanwendung verfügbar: (default_host): http://mbp-von-andreas.fritz.box:9080/ibm/api/
+[04.12.24, 10:23:33:866 MEZ] 0000003b id=00000000 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Das Webmodul wird geladen: health.
+[04.12.24, 10:23:33:867 MEZ] 0000003b id=00000000 com.ibm.ws.webcontainer.osgi.DynamicVirtualHost              I addWebApplication SRVE0250I: Das Webmodul health wurde an default_host gebunden.
+[04.12.24, 10:23:33:868 MEZ] 0000003b id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Webanwendung verfügbar: (default_host): http://mbp-von-andreas.fritz.box:9080/health/
+[04.12.24, 10:23:33:947 MEZ] 00000038 id=00000000 SessionContextRegistryImpl                                   I getSessionContext SESN0176I: Es wird ein neuer Sitzungskontext für den Anwendungsschlüssel default_host/ibm/api erstellt.
+[04.12.24, 10:23:33:947 MEZ] 0000003a id=00000000 SessionContextRegistryImpl                                   I getSessionContext SESN0176I: Es wird ein neuer Sitzungskontext für den Anwendungsschlüssel default_host/metrics erstellt.
+[04.12.24, 10:23:33:947 MEZ] 0000003b id=00000000 SessionContextRegistryImpl                                   I getSessionContext SESN0176I: Es wird ein neuer Sitzungskontext für den Anwendungsschlüssel default_host/health erstellt.
+[04.12.24, 10:23:34:030 MEZ] 00000038 id=00000000 IDGeneratorImpl                                              I IDGeneratorImpl SESN0172I: Der Sitzungsmanager verwendet die SecureRandom-Java-Standardimplementierung für die Generierung von Sitzungs-IDs.
+[04.12.24, 10:23:34:047 MEZ] 0000003b id=00000000 IDGeneratorImpl                                              I IDGeneratorImpl SESN0172I: Der Sitzungsmanager verwendet die SecureRandom-Java-Standardimplementierung für die Generierung von Sitzungs-IDs.
+[04.12.24, 10:23:34:049 MEZ] 0000003a id=00000000 IDGeneratorImpl                                              I IDGeneratorImpl SESN0172I: Der Sitzungsmanager verwendet die SecureRandom-Java-Standardimplementierung für die Generierung von Sitzungs-IDs.
+[04.12.24, 10:23:34:310 MEZ] 0000003c id=00000000 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Es wurde automatisch eine Konfigurationsdatei für ein Web-Server-Plug-in für diesen Server unter /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml generiert.
+[04.12.24, 10:23:34:314 MEZ] 0000003a id=00000000 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (Objektcache) wurde erfolgreich initialisiert.
+[04.12.24, 10:23:34:404 MEZ] 0000003b id=00000000 ws.microprofile.health.services.impl.AppModuleContextService > <init> Entry 
+[04.12.24, 10:23:34:405 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService < <init> Exit  
+                                                                                                               com.ibm.ws.microprofile.health.services.impl.AppModuleContextService@20ee6b5
+[04.12.24, 10:23:34:406 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService > setClassLoaderContextProvider Entry  
+                                                                                                               com.ibm.ws.classloader.context.internal.ClassloaderContextProviderImpl@7ce14253
+[04.12.24, 10:23:34:406 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService < setClassLoaderContextProvider Exit 
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService > setClassLoaderIdentifierService Entry  
+                                                                                                               com.ibm.ws.classloading.internal.ClassLoadingServiceImpl@4122b7a7
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService < setClassLoaderIdentifierService Exit 
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService > setContextService Entry  
+                                                                                                               com.ibm.ws.context.service.serializable.ThreadContextManager@25622570
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService < setContextService Exit 
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService > setJeeMetaDataContextProvider Entry  
+                                                                                                               com.ibm.ws.javaee.metadata.context.internal.JEEMetadataContextProviderImpl@50ac5427
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService < setJeeMetaDataContextProvider Exit 
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService > setMetaDataIdentifierService Entry  
+                                                                                                               com.ibm.ws.container.service.metadata.internal.MetaDataServiceImpl@262967bb
+[04.12.24, 10:23:34:407 MEZ] 0000003b id=020ee6b5 ws.microprofile.health.services.impl.AppModuleContextService < setMetaDataIdentifierService Exit 
+[04.12.24, 10:23:34:410 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > setHealthCheckService Entry  
+                                                                                                               io.openliberty.microprofile.health31.internal.HealthCheck31ServiceImpl@621e7c90
+[04.12.24, 10:23:34:410 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < setHealthCheckService Exit 
+[04.12.24, 10:23:34:411 MEZ] 0000003b id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [io.openliberty.microprofile.health.3.1.internal.jakarta] [/health] [HealthCheckReadinessServlet]: Initialisierung erfolgreich.
+[04.12.24, 10:23:34:413 MEZ] 0000003b id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [io.openliberty.microprofile.health.3.1.internal.jakarta] [/health] [HealthCheckServlet]: Initialisierung erfolgreich.
+[04.12.24, 10:23:34:413 MEZ] 0000003a id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [io.openliberty.microprofile.metrics.5.0.public.internal] [/metrics] [PublicMetricsRESTProxyServlet]: Initialisierung erfolgreich.
+[04.12.24, 10:23:34:413 MEZ] 0000003b id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [io.openliberty.microprofile.health.3.1.internal.jakarta] [/health] [HealthCheckStartupServlet]: Initialisierung erfolgreich.
+[04.12.24, 10:23:34:414 MEZ] 0000003b id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [io.openliberty.microprofile.health.3.1.internal.jakarta] [/health] [HealthCheckLivenessServlet]: Initialisierung erfolgreich.
+[04.12.24, 10:23:35:441 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStarting Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@eacc970[guide-getting-started]
+[04.12.24, 10:23:35:442 MEZ] 00000037 id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStarting() : appName = guide-getting-started
+[04.12.24, 10:23:35:443 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > processApplication Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@2e81d19e ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@eacc970[guide-getting-started]
+                                                                                                               guide-getting-started
+                                                                                                               false
+[04.12.24, 10:23:35:444 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getWebModuleMetaData Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@2e81d19e ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+[04.12.24, 10:23:35:444 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getWebModuleMetaData Exit  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@71e0b1e0[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:23:35:444 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getAppModuleNameFromMetaData Entry  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@71e0b1e0[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 getAppModuleNameFromMetaData() : appModuleName = guide-getting-started#guide-getting-started.war
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getAppModuleNameFromMetaData Exit  
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > addAppModuleNames Entry  
+                                                                                                               guide-getting-started
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 addAppModuleNames(): modules added = {guide-getting-started=[guide-getting-started.war]} for app: guide-getting-started and for module: guide-getting-started.war
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < addAppModuleNames Exit 
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < processApplication Exit 
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStarting(): starting app added in appStateMap = {guide-getting-started=STARTING} for app: guide-getting-started
+[04.12.24, 10:23:35:445 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStarting Exit 
+[04.12.24, 10:23:35:449 MEZ] 00000037 id=00000000 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Das Webmodul wird geladen: Liberty Project.
+[04.12.24, 10:23:35:449 MEZ] 00000037 id=00000000 com.ibm.ws.webcontainer.osgi.DynamicVirtualHost              I addWebApplication SRVE0250I: Das Webmodul Liberty Project wurde an default_host gebunden.
+[04.12.24, 10:23:35:449 MEZ] 00000037 id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Webanwendung verfügbar: (default_host): http://mbp-von-andreas.fritz.box:9080/dev/
+[04.12.24, 10:23:35:454 MEZ] 0000003a id=00000000 SessionContextRegistryImpl                                   I getSessionContext SESN0176I: Es wird ein neuer Sitzungskontext für den Anwendungsschlüssel default_host/dev erstellt.
+[04.12.24, 10:23:35:455 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStarted Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@eacc970[guide-getting-started]
+[04.12.24, 10:23:35:455 MEZ] 0000003a id=00000000 IDGeneratorImpl                                              I IDGeneratorImpl SESN0172I: Der Sitzungsmanager verwendet die SecureRandom-Java-Standardimplementierung für die Generierung von Sitzungs-IDs.
+[04.12.24, 10:23:35:456 MEZ] 00000037 id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStarted(): started app updated in appStateMap = {guide-getting-started=STARTED} for app: guide-getting-started
+[04.12.24, 10:23:35:456 MEZ] 00000037 id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStarted Exit 
+[04.12.24, 10:23:35:501 MEZ] 0000003a id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Die Anwendung guide-getting-started ist nach 1,969 Sekunden gestartet.
+[04.12.24, 10:23:35:587 MEZ] 00000038 id=00000000 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Es wurde automatisch eine Konfigurationsdatei für ein Web-Server-Plug-in für diesen Server unter /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml generiert.
+[04.12.24, 10:23:35:608 MEZ] 00000036 id=00000000 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Der TCP-Kanal defaultHttpEndpoint wurde gestartet und ist jetzt für Anforderungen auf dem Host *  (IPv6) an Port 9080 empfangsbereit.
+[04.12.24, 10:23:35:612 MEZ] 00000036 id=00000000 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Der TCP-Kanal defaultHttpEndpoint-ssl wurde gestartet und ist jetzt für Anforderungen auf dem Host *  (IPv6) an Port 9443 empfangsbereit.
+[04.12.24, 10:23:35:662 MEZ] 00000036 id=00000000 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Im Server wurden die folgenden Features installiert: [cdi-4.0, distributedMap-1.0, jndi-1.0, json-1.0, jsonb-3.0, jsonp-2.1, monitor-1.0, mpConfig-3.1, mpHealth-4.0, mpMetrics-5.1, restfulWS-3.1, restfulWSClient-3.1, ssl-1.0, transportSecurity-1.0].
+[04.12.24, 10:23:35:665 MEZ] 00000036 id=00000000 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Die Featureaktualisierung wurde in 8,264 Sekunden durchgeführt.
+[04.12.24, 10:23:35:665 MEZ] 00000036 id=00000000 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Der Server defaultServer ist für die Ausführung von Smarter Planet bereit. Der Server defaultServer ist nach 10,123 Sekunden gestartet.
+[04.12.24, 10:23:35:882 MEZ] 0000003a id=00000000 org.jboss.resteasy.core.ResteasyDeploymentImpl               I processApplication RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.openliberty.sample.system.SystemApplication$Proxy$_$$_WeldClientProxy
+[04.12.24, 10:23:35:909 MEZ] 0000003a id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [guide-getting-started] [/dev] [io.openliberty.sample.system.SystemApplication]: Initialisierung erfolgreich.
+[04.12.24, 10:25:29:194 MEZ] 0000003c id=00000000 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0016I: Die Aktualisierung der Serverkonfiguration wird gestartet.
+[04.12.24, 10:25:29:204 MEZ] 0000003c id=00000000 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Konfigurations-Drop-in-Ressource wird verarbeitet: /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[04.12.24, 10:25:29:228 MEZ] 0000003c id=00000000 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0018I: Die Serverkonfiguration wurde nicht aktualisiert. Es wurden keine funktionalen Änderungen erkannt.
+[04.12.24, 10:25:29:442 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStopping Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@eacc970[guide-getting-started]
+[04.12.24, 10:25:29:442 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStopping Exit 
+[04.12.24, 10:25:29:443 MEZ] 0000003a id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/dev/
+[04.12.24, 10:25:29:447 MEZ] 0000003a id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I doDestroy SRVE0253I: [guide-getting-started] [/dev] [io.openliberty.sample.system.SystemApplication]: Löschen erfolgreich.
+[04.12.24, 10:25:29:485 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStopped Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@eacc970[guide-getting-started]
+[04.12.24, 10:25:29:485 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > processApplication Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@2e81d19e ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@eacc970[guide-getting-started]
+                                                                                                               guide-getting-started
+                                                                                                               true
+[04.12.24, 10:25:29:486 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getWebModuleMetaData Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@2e81d19e ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+[04.12.24, 10:25:29:486 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getWebModuleMetaData Exit  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@71e0b1e0[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:25:29:487 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getAppModuleNameFromMetaData Entry  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@71e0b1e0[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:25:29:487 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 getAppModuleNameFromMetaData() : appModuleName = guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:29:487 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getAppModuleNameFromMetaData Exit  
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:29:487 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > moduleStopped Entry  
+                                                                                                               guide-getting-started
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:29:487 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 moduleStopped(): app module removed = {} for app: guide-getting-started and for module: guide-getting-started.war
+[04.12.24, 10:25:29:487 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < moduleStopped Exit 
+[04.12.24, 10:25:29:488 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < processApplication Exit 
+[04.12.24, 10:25:29:488 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getApplicationMBean Entry  
+                                                                                                               guide-getting-started
+[04.12.24, 10:25:29:491 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getApplicationMBean Exit  
+                                                                                                               STOPPING
+[04.12.24, 10:25:29:492 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStopped(): stopped app removed from appStateMap = {} for app: guide-getting-started
+[04.12.24, 10:25:29:492 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStopped Exit 
+[04.12.24, 10:25:29:497 MEZ] 0000003a id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Die Anwendung guide-getting-started wurde erfolgreich gestoppt.
+[04.12.24, 10:25:29:505 MEZ] 0000003a id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Die Anwendung guide-getting-started wird gestartet.
+[04.12.24, 10:25:29:505 MEZ] 0000003a id=00000000 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Die Anwendung guide-getting-started verwendet die lose Anwendungsdefinition an der Position /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/apps/guide-getting-started.war.xml.
+[04.12.24, 10:25:29:571 MEZ] 00000056 id=00000000 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Es wurde automatisch eine Konfigurationsdatei für ein Web-Server-Plug-in für diesen Server unter /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml generiert.
+[04.12.24, 10:25:30:758 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStarting Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@4250e356[guide-getting-started]
+[04.12.24, 10:25:30:759 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStarting() : appName = guide-getting-started
+[04.12.24, 10:25:30:759 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > processApplication Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@3f12d9d1 ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@4250e356[guide-getting-started]
+                                                                                                               guide-getting-started
+                                                                                                               false
+[04.12.24, 10:25:30:760 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getWebModuleMetaData Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@3f12d9d1 ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+[04.12.24, 10:25:30:760 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getWebModuleMetaData Exit  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@111539bf[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:25:30:761 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getAppModuleNameFromMetaData Entry  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@111539bf[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 getAppModuleNameFromMetaData() : appModuleName = guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getAppModuleNameFromMetaData Exit  
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > addAppModuleNames Entry  
+                                                                                                               guide-getting-started
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 addAppModuleNames(): modules added = {guide-getting-started=[guide-getting-started.war]} for app: guide-getting-started and for module: guide-getting-started.war
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < addAppModuleNames Exit 
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < processApplication Exit 
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStarting(): starting app added in appStateMap = {guide-getting-started=STARTING} for app: guide-getting-started
+[04.12.24, 10:25:30:762 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStarting Exit 
+[04.12.24, 10:25:30:764 MEZ] 0000003a id=00000000 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Das Webmodul wird geladen: Liberty Project.
+[04.12.24, 10:25:30:764 MEZ] 0000003a id=00000000 com.ibm.ws.webcontainer.osgi.DynamicVirtualHost              I addWebApplication SRVE0250I: Das Webmodul Liberty Project wurde an default_host gebunden.
+[04.12.24, 10:25:30:764 MEZ] 0000003a id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Webanwendung verfügbar: (default_host): http://mbp-von-andreas.fritz.box:9080/dev/
+[04.12.24, 10:25:30:766 MEZ] 00000055 id=00000000 SessionContextRegistryImpl                                   I getSessionContext SESN0176I: Es wird ein neuer Sitzungskontext für den Anwendungsschlüssel default_host/dev erstellt.
+[04.12.24, 10:25:30:766 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStarted Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@4250e356[guide-getting-started]
+[04.12.24, 10:25:30:767 MEZ] 0000003a id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStarted(): started app updated in appStateMap = {guide-getting-started=STARTED} for app: guide-getting-started
+[04.12.24, 10:25:30:767 MEZ] 0000003a id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStarted Exit 
+[04.12.24, 10:25:30:767 MEZ] 00000055 id=00000000 IDGeneratorImpl                                              I IDGeneratorImpl SESN0172I: Der Sitzungsmanager verwendet die SecureRandom-Java-Standardimplementierung für die Generierung von Sitzungs-IDs.
+[04.12.24, 10:25:30:780 MEZ] 00000055 id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: Die Anwendung guide-getting-started wurde nach 1,275 Sekunden aktualisiert.
+[04.12.24, 10:25:30:823 MEZ] 0000003c id=00000000 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Es wurde automatisch eine Konfigurationsdatei für ein Web-Server-Plug-in für diesen Server unter /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml generiert.
+[04.12.24, 10:25:30:883 MEZ] 00000055 id=00000000 org.jboss.resteasy.core.ResteasyDeploymentImpl               I processApplication RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.openliberty.sample.system.SystemApplication$Proxy$_$$_WeldClientProxy
+[04.12.24, 10:25:30:891 MEZ] 00000055 id=00000000 com.ibm.ws.webcontainer.servlet.ServletWrapper               I init SRVE0242I: [guide-getting-started] [/dev] [io.openliberty.sample.system.SystemApplication]: Initialisierung erfolgreich.
+[04.12.24, 10:25:43:320 MEZ] 0000001d id=00000000 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Der Server defaultServer wird gerade gestoppt, weil die JVM beendet wird.
+[04.12.24, 10:25:43:335 MEZ] 0000006b id=00000000 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Es wird bis zu 30 Sekunden gewartet, bis der Server in den Quiescemodus versetzt wird.
+[04.12.24, 10:25:43:365 MEZ] 0000005b id=00000000 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint-ssl ist auf Host *  (IPv6) an Port 9443 nicht mehr für Anforderungen empfangsbereit.
+[04.12.24, 10:25:43:368 MEZ] 0000005b id=00000000 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint ist auf Host *  (IPv6) an Port 9080 nicht mehr für Anforderungen empfangsbereit.
+[04.12.24, 10:25:43:368 MEZ] 0000005b id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/dev/
+[04.12.24, 10:25:43:369 MEZ] 0000005b id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/metrics/
+[04.12.24, 10:25:43:371 MEZ] 0000005b id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/health/
+[04.12.24, 10:25:43:375 MEZ] 0000005b id=00000000 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/ibm/api/
+[04.12.24, 10:25:43:734 MEZ] 0000001e id=00000000 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Herunterfahren des Servers angefordert am Mittwoch, 4. Dezember 2024 um 10:25. Der Server defaultServer wird beendet.
+[04.12.24, 10:25:44:389 MEZ] 0000006b id=00000000 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Serverstilllegung abgeschlossen.
+[04.12.24, 10:25:44:437 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStopping Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@4250e356[guide-getting-started]
+[04.12.24, 10:25:44:437 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStopping Exit 
+[04.12.24, 10:25:44:453 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > applicationStopped Entry  
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@4250e356[guide-getting-started]
+[04.12.24, 10:25:44:453 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > processApplication Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@3f12d9d1 ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+                                                                                                               com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@4250e356[guide-getting-started]
+                                                                                                               guide-getting-started
+                                                                                                               true
+[04.12.24, 10:25:44:454 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getWebModuleMetaData Entry  
+                                                                                                               com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@3f12d9d1 ( file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp/ file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/liberty/wlp/usr/servers/defaultServer/workarea/org.eclipse.osgi/51/data/cacheAdapt/com.ibm.ws.app.manager_0/.overlay/ )
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getWebModuleMetaData Exit  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@111539bf[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getAppModuleNameFromMetaData Entry  
+                                                                                                               com.ibm.ws.webcontainer.osgi.metadata.WebModuleMetaDataImpl@111539bf[guide-getting-started#guide-getting-started.war]
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 getAppModuleNameFromMetaData() : appModuleName = guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getAppModuleNameFromMetaData Exit  
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > moduleStopped Entry  
+                                                                                                               guide-getting-started
+                                                                                                               guide-getting-started#guide-getting-started.war
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 moduleStopped(): app module removed = {} for app: guide-getting-started and for module: guide-getting-started.war
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < moduleStopped Exit 
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < processApplication Exit 
+[04.12.24, 10:25:44:455 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > getApplicationMBean Entry  
+                                                                                                               guide-getting-started
+[04.12.24, 10:25:44:456 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < getApplicationMBean Exit  
+                                                                                                               STOPPING
+[04.12.24, 10:25:44:456 MEZ] 0000003b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 applicationStopped(): stopped app removed from appStateMap = {} for app: guide-getting-started
+[04.12.24, 10:25:44:457 MEZ] 0000003b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < applicationStopped Exit 
+[04.12.24, 10:25:44:458 MEZ] 0000003b id=00000000 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Die Anwendung guide-getting-started wurde erfolgreich gestoppt.
+[04.12.24, 10:25:44:607 MEZ] 0000006b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > deactivate Entry  
+                                                                                                               org.apache.felix.scr.impl.manager.ComponentContextImpl@1122f129
+                                                                                                               6
+[04.12.24, 10:25:44:607 MEZ] 0000006b id=00000000 com.ibm.ws.microprofile.health.internal.AppTrackerImpl       3 AppTrackerImpl is deactivated
+[04.12.24, 10:25:44:607 MEZ] 0000006b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < deactivate Exit 
+[04.12.24, 10:25:44:607 MEZ] 0000006b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       > unsetConfigAdmin Entry  
+                                                                                                               com.ibm.ws.config.admin.internal.ConfigurationAdminImpl@62bba312
+[04.12.24, 10:25:44:607 MEZ] 0000006b id=3fecf9ea com.ibm.ws.microprofile.health.internal.AppTrackerImpl       < unsetConfigAdmin Exit 
+[04.12.24, 10:25:44:621 MEZ] 0000006b id=00000000 .microprofile.metrics.internal.monitor.MonitorMetricsHandler I CWPMI2004I: Die Registrierung aller Überwachungsmetriken wurde in mpMetrics aufgehoben.
+[04.12.24, 10:25:44:708 MEZ] 0000006b id=00000000 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: Das Verbundauthentifizierungs-Plug-in mit dem Klassennamen NullCollectiveAuthenticationPlugin wurde inaktiviert. 
+[04.12.24, 10:25:44:712 MEZ] 0000006b id=00000000 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: Der Sicherheitsservice wurde gestoppt.
+[04.12.24, 10:25:44:996 MEZ] 00000001 id=00000000 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Der Server defaultServer wurde nach 2 Minuten, 19,455 Sekunden gestoppt.

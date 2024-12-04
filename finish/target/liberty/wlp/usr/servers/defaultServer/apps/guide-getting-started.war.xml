@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/src/main/webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="/Users/andreas/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar" targetInArchive="/WEB-INF/lib/httpclient-4.5.14.jar"/>
+    <file sourceOnDisk="/Users/andreas/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar" targetInArchive="/WEB-INF/lib/httpcore-4.4.16.jar"/>
+    <file sourceOnDisk="/Users/andreas/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" targetInArchive="/WEB-INF/lib/commons-logging-1.2.jar"/>
+    <file sourceOnDisk="/Users/andreas/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar" targetInArchive="/WEB-INF/lib/commons-codec-1.11.jar"/>
+    <file sourceOnDisk="/Users/andreas/.m2/repository/org/json/json/20090211/json-20090211.jar" targetInArchive="/WEB-INF/lib/json-20090211.jar"/>
+    <file sourceOnDisk="/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
+</archive>
