@@ -17,8 +17,8 @@ LABEL \
   description="This image contains the system microservice running with the Open Liberty runtime."
 
 COPY --chown=1001:0 src/main/liberty/config/ /config/
+#DEBUG
+RUN echo "http_proxy: "${no_proxy}
 RUN features.sh
 COPY --chown=1001:0 target/*.war /config/apps/
-#DEBUG
-RUN echo "no_proxy: "${no_proxy}
 RUN configure.sh
