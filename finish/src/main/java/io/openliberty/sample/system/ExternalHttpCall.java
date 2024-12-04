@@ -39,21 +39,25 @@ public class ExternalHttpCall {
              = "Number of times the JVM system properties are requested")
     public Response doExternalHttpCall() {
         MyHttpClient theMyHttpClient = new MyHttpClient();
-//        String myJSON ="{\"URL\":\"http://test.de\"}";  
         JSONObject jsonObject = new JSONObject();
-        String result = null;
-		try
-		{
-			jsonObject.put("Url", "https://httpbin.org/get");
+    
+		try {
+			jsonObject.put("Url", "https://hello-hello.apps.aehub1.cp.fyre.ibm.com/");
 			System.out.println("JSON Object: "+jsonObject);
 
-            result = theMyHttpClient.doGet("https://httpbin.org/get");
-		}
-		catch (Exception e)
-		{
-			System.out.println("Error "+e.toString());
+            String result = theMyHttpClient.doGet(jsonObject.getString("Url"));
+            jsonObject.put("Result body", result);
 		} 
-        return Response.ok(result).build();
+		catch (Exception e) {
+			System.out.println("Error "+e.toString());
+            try {
+                jsonObject.put("Error", e.toString());
+            }
+            catch (Exception je) {
+                System.out.println("Error "+e.toString());
+            }
+		} 
+        return Response.ok(jsonObject.toString()).build();
     }
 
 }

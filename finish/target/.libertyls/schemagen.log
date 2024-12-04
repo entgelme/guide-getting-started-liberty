@@ -1,0 +1,8 @@
+CWWKG0030E: Die in der Erweiterung ibm:reference aufgelistete Pid-Referenz com.ibm.ws.jca.resourceAdapter ist nicht vorhanden.
+CWWKG0030E: Die in der Erweiterung ibm:reference aufgelistete Pid-Referenz com.ibm.ws.security.jca.internal.authdata.config ist nicht vorhanden.
+CWWKG0069W: Das Attribut sslSessionCacheSize der Objektklassendefinition com.ibm.ws.sslchannel.options im Bundle com.ibm.ws.channel.ssl/1.0.96.cl241220241119-0657 enthält eine nicht aufgelöste Attributbeschreibung.
+CWWKG0070W: Das Attribut sslSessionCacheSize der Objektklassendefinition com.ibm.ws.sslchannel.options im Bundle com.ibm.ws.channel.ssl/1.0.96.cl241220241119-0657 enthält einen nicht aufgelösten Attributnamen.
+CWWKG0069W: Das Attribut throwCheckedExceptions der Objektklassendefinition com.ibm.ws.transaction im Bundle com.ibm.ws.transaction.jakarta/1.0.96.cl241220241119-0657 enthält eine nicht aufgelöste Attributbeschreibung.
+CWWKG0070W: Das Attribut throwCheckedExceptions der Objektklassendefinition com.ibm.ws.transaction im Bundle com.ibm.ws.transaction.jakarta/1.0.96.cl241220241119-0657 enthält einen nicht aufgelösten Attributnamen.
+CWWKG0030E: Die in der Erweiterung ibm:reference aufgelistete Pid-Referenz com.ibm.ws.jdbc.dataSource ist nicht vorhanden.
+CWWKG0109I: Das Schema wurde in der Datei [/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/guide-getting-started-liberty/finish/target/.libertyls/ol-24.0.0.12.xsd] erstellt.

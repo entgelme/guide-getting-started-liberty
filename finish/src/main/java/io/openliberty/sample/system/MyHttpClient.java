@@ -15,7 +15,7 @@ public class MyHttpClient {
     public String doGet(String Url) throws IOException {
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        String result;
+        String result = null;
         try {
             HttpGet request = new HttpGet(Url);
 
