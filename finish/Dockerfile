@@ -18,9 +18,9 @@ LABEL \
 
 COPY --chown=1001:0 src/main/liberty/config/ /config/
 #DEBUG
-#ENV "http_proxy"=""
+ENV "http_proxy"=
 #RUN echo "http_proxy: "${http_proxy}
 
-#RUN features.sh
+RUN features.sh
 COPY --chown=1001:0 target/*.war /config/apps/
 RUN configure.sh
