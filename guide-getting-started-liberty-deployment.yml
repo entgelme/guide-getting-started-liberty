@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "5"
+    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"liberty-on-container:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"liberty-on-container\")].image"}]'
+    openshift.io/generated-by: OpenShiftNewApp
+  creationTimestamp: "2024-12-04T13:17:43Z"
+  generation: 5
+  labels:
+    app: liberty-on-container
+    app.kubernetes.io/component: liberty-on-container
+    app.kubernetes.io/instance: liberty-on-container
+  name: liberty-on-container
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      deployment: liberty-on-container
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        openshift.io/generated-by: OpenShiftNewApp
+      creationTimestamp: null
+      labels:
+        deployment: liberty-on-container
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/default/liberty-on-container:latest
+        imagePullPolicy: IfNotPresent
+        name: liberty-on-container
+        ports:
+        - containerPort: 9443
+          protocol: TCP
+        - containerPort: 9080
+          protocol: TCP
+        resources: {}
+      restartPolicy: Always
+      securityContext: {}
