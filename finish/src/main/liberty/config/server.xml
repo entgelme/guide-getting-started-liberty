@@ -10,8 +10,23 @@
         <feature>mpHealth-4.0</feature>
         <!-- end::mpHealth[] -->
         <feature>mpConfig-3.1</feature>
+        <feature>transportSecurity-1.0</feature>
     </featureManager>
     <!-- end::features[] -->
+
+
+<!--  Simple ssl configuration service object. This assumes there is a keystore object named -->
+<!--  defaultKeyStore and a truststore object named defaultTrustStore in the server.xml file. -->
+    <ssl id="myDefaultSSLConfig"
+        keyStoreRef="defaultKeyStore"
+        trustStoreRef="defaultTrustStore" />
+
+
+    <ssl id="myDefaultSSLConfig"
+        keyStoreRef="defaultKeyStore"
+        trustStoreRef="defaultTrustStore"
+        trustDefaultCerts="true" />
+
 
     <variable name="http.port" defaultValue="9080"/>
     <variable name="https.port" defaultValue="9443"/>
