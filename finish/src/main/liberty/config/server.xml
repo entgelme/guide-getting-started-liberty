@@ -20,7 +20,7 @@
     <keyStore   id="defaultTrustStore" 
                 location="${server.config.dir}/resources/security/trust.jks" 
                 type="PKCS12" 
-                password="changeme" />
+                password="storePassword" />
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" trustDefaultCerts="${SEC_TLS_TRUSTDEFAULTCERTS}" />
  
     <variable name="http.port" defaultValue="9080"/>
