@@ -14,11 +14,14 @@
     </featureManager>
     <!-- end::features[] -->
 
-    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore"  />
-    <!-- trustDefaultCerts="${SEC_TLS_TRUSTDEFAULTCERTS}" -->
-    <keyStore id="defaultKeyStore" password="changeme"/>
-    <keyStore id="defaultTrustStore" location="${server.output.dir}/resources/security/trust.p12" type="PKCS12" password="changeme" />
-    <!-- <variable name="SEC_TLS_TRUSTDEFAULTCERTS" defaultValue="true"/> -->
+    <variable name="SEC_TLS_TRUSTDEFAULTCERTS" defaultValue="true"/>
+        
+    <keyStore   id="defaultKeyStore" password="changeme"/>
+    <keyStore   id="defaultTrustStore" 
+                location="${server.output.dir}/resources/security/trust.p12" 
+                type="PKCS12" 
+                password="changeme" />
+    <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" trustDefaultCerts="${SEC_TLS_TRUSTDEFAULTCERTS}" />
  
     <variable name="http.port" defaultValue="9080"/>
     <variable name="https.port" defaultValue="9443"/>
