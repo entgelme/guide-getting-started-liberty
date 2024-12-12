@@ -31,10 +31,33 @@ spec:
       labels:
         deployment: liberty-on-container
     spec:
+      volumes:
+        - name: tls-ca-bundle
+          configMap:
+            name: trusted-ca
+            items:
+              - key: ca-bundle.crt
+                path: ca.crt
+            defaultMode: 420
       containers:
       - image: image-registry.openshift-image-registry.svc:5000/default/liberty-on-container:latest
         imagePullPolicy: IfNotPresent
         name: liberty-on-container
+        env:
+          - name: TLS_DIRx
+            value: /etc/x509/certs/
+          - name: SEC_IMPORT_K8S_CERTS
+            value: 'false'
+          - name: SEC_TLS_TRUSTDEFAULTCERTS
+            value: 'true'
+          - name: cert_defaultTrustStore
+            value: /etc/x509/certs/ca.crt
+          - name: WLP_LOGGING_CONSOLE_LOGLEVEL
+            value: info
+        volumeMounts:
+          - name: tls-ca-bundle
+            readOnly: true
+            mountPath: /etc/x509/certs/
         ports:
         - containerPort: 9443
           protocol: TCP
