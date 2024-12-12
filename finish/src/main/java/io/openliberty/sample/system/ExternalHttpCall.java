@@ -42,7 +42,8 @@ public class ExternalHttpCall {
         JSONObject jsonObject = new JSONObject();
     
 		try {
-            jsonObject.put("Url", "https://secure.slo.state.nm.us/");
+            jsonObject.put("Url", "https://evalae21.fyre.ibm.com:5001");
+//            jsonObject.put("Url", "https://secure.slo.state.nm.us/");
 //            jsonObject.put("Url", "https://hello-hello.apps.aehub1.cp.fyre.ibm.com/");
 			System.out.println("JSON Object: "+jsonObject);
 
