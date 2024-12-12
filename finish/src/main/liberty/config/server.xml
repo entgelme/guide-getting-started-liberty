@@ -18,7 +18,7 @@
         
     <keyStore   id="defaultKeyStore" password="changeme"/>
     <keyStore   id="defaultTrustStore" 
-                location="${server.config.dir}/resources/security/trust.jks" 
+                location="${server.config.dir}/resources/security/trust.p12" 
                 type="PKCS12" 
                 password="storePassword" />
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" trustDefaultCerts="${SEC_TLS_TRUSTDEFAULTCERTS}" />
