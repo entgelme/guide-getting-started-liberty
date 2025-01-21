@@ -11,7 +11,10 @@
         <!-- end::mpHealth[] -->
         <feature>mpConfig-3.1</feature>
         <feature>transportSecurity-1.0</feature>
-        <feature>restConnector-2.0</feature>
+    <!-- Begin settings for the Admin REST Connector -->
+       <feature>restConnector-2.0</feature>
+    <!-- End settings for the Admin REST Connector -->
+
     </featureManager>
     <!-- end::features[] -->
 
@@ -40,5 +43,10 @@
         httpsPort="${https.port}" id="defaultHttpEndpoint"/>
 
     <variable name="io_openliberty_guides_system_inMaintenance" value="false"/>
-    <quickStartSecurity username="admin" userPassword="password" />
+    <!-- Begin settings for the Admin REST Connector -->
+    <quickStartSecurity username="restadmin" userPassword="changeme" /> <!-- only for preprod environments-->
+    <reader-role>
+        <user>restadmin</user>
+    </reader-role>
+    <!-- End settings for the Admin REST Connector -->
 </server>
