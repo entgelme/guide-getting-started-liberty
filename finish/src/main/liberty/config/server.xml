@@ -19,8 +19,8 @@
     <!-- end::features[] -->
 
     <variable name="SEC_TLS_TRUSTDEFAULTCERTS" defaultValue="true"/>
-    <keyStore   id="defaultKeyStore" password="changeme"/>
 <!--         
+    <keyStore   id="defaultKeyStore" password="changeme"/>
     <keyStore   id="defaultTrustStore" 
                 location="${server.config.dir}/resources/security/trust.p12" 
                 type="PKCS12" 
@@ -44,7 +44,10 @@
 
     <variable name="io_openliberty_guides_system_inMaintenance" value="false"/>
     <!-- Begin settings for the Admin REST Connector -->
-    <quickStartSecurity userName="restadmin" userPassword="changeme" /> <!-- only for preprod environments-->
+    <!-- <quickStartSecurity userName="restadmin" userPassword="changeme" /> <!- - only for preprod environments -->
+    <basicRegistry>
+        <user name="restadmin" password="changeme"/>
+    </basicRegistry>
     <reader-role>
         <user>restadmin</user>
     </reader-role>
