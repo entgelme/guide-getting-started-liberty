@@ -25,7 +25,7 @@ oc apply -f cm-trusted-ca.yml
 
 # Create the deployment for the app, which calls the remote service
 oc apply -f guide-getting-started-liberty-deployment.yml
-oc expose deployment/$LIBERTYIMG --port LIBERTYPORT --target-port LIBERTYPORT
+oc expose deployment/$LIBERTYIMG --port $LIBERTYPORT --target-port $LIBERTYPORT
 oc expose svc/$LIBERTYIMG
 
 # Login to the local image registry

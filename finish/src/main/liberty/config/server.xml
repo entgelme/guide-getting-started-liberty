@@ -11,12 +11,13 @@
         <!-- end::mpHealth[] -->
         <feature>mpConfig-3.1</feature>
         <feature>transportSecurity-1.0</feature>
+        <feature>restConnector-2.0</feature>
     </featureManager>
     <!-- end::features[] -->
 
     <variable name="SEC_TLS_TRUSTDEFAULTCERTS" defaultValue="true"/>
-<!--         
     <keyStore   id="defaultKeyStore" password="changeme"/>
+<!--         
     <keyStore   id="defaultTrustStore" 
                 location="${server.config.dir}/resources/security/trust.p12" 
                 type="PKCS12" 
@@ -39,4 +40,5 @@
         httpsPort="${https.port}" id="defaultHttpEndpoint"/>
 
     <variable name="io_openliberty_guides_system_inMaintenance" value="false"/>
+    <quickStartSecurity> username="admin" userPassword=password </quickStartSecurity>
 </server>
