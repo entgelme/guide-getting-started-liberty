@@ -28,7 +28,7 @@
     <ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" trustDefaultCerts="${SEC_TLS_TRUSTDEFAULTCERTS}" />
   -->
     <variable name="http.port" defaultValue="9080"/>
-    <variable name="https.port" defaultValue="9443"/>
+    <variable name="https.port" defaultValue="-1"/>
 
     <!-- tag::webApplication[] -->
     <webApplication location="guide-getting-started.war" contextRoot="/dev" />

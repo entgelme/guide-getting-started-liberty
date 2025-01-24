@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"liberty-on-container:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"liberty-on-container\")].image"}]'
+  labels:
+    app: liberty-on-container
+    app.kubernetes.io/component: liberty-on-container
+    app.kubernetes.io/instance: liberty-on-container
+  name: liberty-on-container
+  namespace: guide-getting-started-liberty
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      deployment: liberty-on-container
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        deployment: liberty-on-container
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/guide-getting-started-liberty/liberty-on-container
+        imagePullPolicy: IfNotPresent
+        name: liberty-on-container
+        ports:
+        - containerPort: 9443
+          protocol: TCP
+        - containerPort: 9080
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30        
